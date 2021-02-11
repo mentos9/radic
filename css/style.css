@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src: url(../fonts/NotoSerifRegular.woff);
+}
+
+@font-face {
+    font-family: "PT Sans Caption";
+    src: url(../fonts/PTSansRegular.woff);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(241, 233, 214, 0.6) 70.71%), url("../images/oriental.png");
+    background-attachment: fixed;
+}
+
+li {
+    list-style-type: none;
+}
+
+.list_price_room {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.title_price_room {
+    padding-bottom: 70px;
+    padding-top: 115px;
+    font-size: 42px;
+    color: #70563d;
+    font-weight: 400;
+    font-family: "Noto Serif";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container_price_room {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.single_room_price {
+    filter: grayscale(0%);
+    width: 370px;
+    height: 589px;
+    margin: 0 15px;
+    object-fit: cover;
+    font-size: 0px;
+    padding-bottom: 20px;
+}
+
+.brief_info_room {
+    margin: auto;
+    width: 360px;
+    height: 359px;
+    background-color: #ffffff;
+}
+
+.brief_info_room:hover {
+    border-bottom: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+}
+
+.image_single_room {
+    width: 100%;
+}
+
+.single_room_price:hover .best_price {
+    display: block;
+}
+
+.best_price {
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.best_price:hover {
+    display: block;
+}
+
+.text_best_price {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: -62px;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "PT Sans Caption";
+    text-align: center;
+}
+
+.description_room {
+    margin: 0 30px 0 30px;
+    height: 180px;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.title_room {
+    height: 90px;
+    padding-top: 15px;
+    font-size: 29px;
+    color: #70563d;
+    font-weight: 400;
+    font-family: "Noto Serif";
+    text-align: center;
+    overflow: hidden;
+}
+
+.text_room {
+    margin: auto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1e1e1e;
+    font-weight: 400;
+    font-family: "PT Sans";
+    text-align: center;
+    overflow: hidden;
+    height: 72px;
+}
+
+.price_room {
+    height: 54px;
+    font-size: 18px;
+    color: #4b4b4b;
+    font-weight: 400;
+    font-family: "Noto Serif";
+    text-align: center;
+    padding-top: 26px;
+    overflow: hidden;
+}
+
+.price {
+    max-width: 5ch;
+    font-size: 24px;
+    color: #70563d;
+    overflow: hidden;
+}
+
+.button_booking_room {
+    width: 230px;
+    height: 50px;
+    background-color: #775a24;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "PT Sans Caption";
+}
+
+.button_booking_room:hover {
+    background-color: #9e8554;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1366px) {
+    .list_price_room {
+        top: 40px;
+        transform: none;
+    }
+
+    .container_price_room {
+        flex-wrap: wrap
+    }
+
+    .single_room_price {
+        width: 370px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 667px) {
+    .list_price_room {
+        top: 20px;
+        transform: none;
+    }
+
+    .single_room_price {
+        padding-bottom: 20px;
+    }
+
+    .container_price_room {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .single_room_price {
+        width: 80%;
+        height: auto;
+    }
+
+    .title_price_room {
+
+    }
+
+    .title_room {
+        padding: 0 5px;
+        font-size: 22px;
+    }
+}
+
+.display_none {
+    display: none;
+}

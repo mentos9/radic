@@ -27,6 +27,7 @@ li {
     list-style-type: none;
 }
 
+
 .list_price_room {
     width: 100%;
     position: absolute;
@@ -61,7 +62,8 @@ li {
     margin: 0 15px;
     object-fit: cover;
     font-size: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .brief_info_room {
@@ -201,7 +203,7 @@ li {
     }
 
     .single_room_price {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     .container_price_room {
@@ -228,4 +230,13 @@ li {
 
 .display_none {
     display: none;
+}
+
+.button_gray {
+    background: #bcbcbc;
+}
+
+.layer_gray {
+    opacity: 0.4;
+    background: #bcbcbc;
 }
